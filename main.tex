@@ -1,0 +1,57 @@
+% Conigurações do documento ------------------------------------------------------------------------
+\documentclass[red]{templatecm}
+
+% Parâmetros principais ----------------------------------------------------------------------------
+\title{Título}                          % Somente no modo "assignment" (padrão)
+\course{Disciplina}
+\code{XXX0000}
+\professor{Prof. Nome do Professor}
+
+\student{Nome Completo}
+\id{00000000}
+\class{Turma XX}                        % Somente no modo "notebook"
+
+\date{\today}
+\term{Xº semestre de 20XX}              % Somente no modo "notebook"
+
+\institute{Pró-Reitoria de Graduação \\
+           Universidade de São Paulo}
+
+% Comandos personalizados --------------------------------------------------------------------------
+% - %
+
+% Início do documento ------------------------------------------------------------------------------
+\begin{document}
+
+\maketitle
+
+\section{Exercícios}
+
+\begin{enumerate}[label={\Large \hili{Exercício \arabic*.}}, align=left, itemsep=1cm]
+    \item ~
+    \begin{enumerate}[label={\large \hili{\Alph*)}}, itemsep=.5cm]
+        \item \lipsum[1-1]
+        %------------------------
+        \item \lipsum[2-2]
+        %------------------------
+        \item \lipsum[3-3]
+        %------------------------
+    \end{enumerate}
+    %-------------------------------------------------
+    
+    \item \lipsum[4-5]
+\end{enumerate}
+
+%-------------------------------------------------
+\section{Seção A}
+%------------------------
+\subsection{Subseção}
+
+\lipsum[3-6]
+
+ %------------------------------------------------
+\section{Seção B}
+
+\lipsum[1-4]
+
+\end{document}
