@@ -12,14 +12,13 @@
 %     Arquivo LaTeX modelo para provas, listas e cadernos do CCM-USP
 %     Por: Alfredo Marin (T30)
 %     Criado em: Outubro/2022
-%     Última atualização em: Outubro/2022
 %
 %---------------------------------------------------------------------------------------------------
 
 
 % IDENTIFICAÇÃO ------------------------------------------------------------------------------------
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{templatecm}[2022/10/16 Template para provas, listas e cadernos do CCM-USP]
+\ProvidesClass{templatecm}[2022/10/18 Template para provas, listas e cadernos do CCM-USP]
 
 
 % DECLARAÇÕES PRELIMINARES -------------------------------------------------------------------------
@@ -81,11 +80,9 @@
 % OUTRAS DECLARAÇÕES -------------------------------------------------------------------------------
 % Outros Pacotes ---------------------------------
 % Configuração das fontes %
-\RequirePackage[proportional,scaled=1.064]{erewhon}     % Fonte padrão
-\RequirePackage[erewhon,vvarbb,bigdelims]{newtxmath}    % Fonte matemática
+\RequirePackage[proportional,scaled=1.1]{notomath}    % Fonte padrão e matemática
 \RequirePackage{nimbusmononarrow}                       % Fonte monospace
 \RequirePackage[T1]{fontenc}
-\renewcommand*\oldstylenums[1]{\textosf{#1}}
 
 % Configuração do layout %
 \RequirePackage[a4paper, top=3cm, bottom=2cm, left=3cm, right=2cm]{geometry}
