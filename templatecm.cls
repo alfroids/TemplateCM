@@ -80,7 +80,7 @@
 % OUTRAS DECLARAÇÕES -------------------------------------------------------------------------------
 % Outros Pacotes ---------------------------------
 % Configuração das fontes %
-\RequirePackage[proportional,scaled=1.1]{notomath}    % Fonte padrão e matemática
+\RequirePackage[proportional,scaled=1.1]{notomath}      % Fonte padrão e matemática
 \RequirePackage{nimbusmononarrow}                       % Fonte monospace
 \RequirePackage[T1]{fontenc}
 
