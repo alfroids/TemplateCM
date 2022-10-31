@@ -18,7 +18,7 @@
 
 % IDENTIFICAÇÃO ------------------------------------------------------------------------------------
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{templatecm}[2022/10/18 Template para provas, listas e cadernos do CCM-USP]
+\ProvidesClass{templatecm}[2022/10/31 Template para provas, listas e cadernos do CCM-USP]
 
 
 % DECLARAÇÕES PRELIMINARES -------------------------------------------------------------------------
@@ -148,7 +148,15 @@
 
 % Configurações do layout ------------------------
 % Estilo do código %
+\definecolor{bggray}{RGB}{240, 240, 240}
 \usemintedstyle{pastie}
+\setminted{fontsize=\small,
+           %
+           bgcolor=bggray,
+           %
+           frame=lines,
+           framesep=2.5mm,
+           baselinestretch=1.25}
 
 % Espaçamento entre linhas %
 \setstretch{1.25}
@@ -166,7 +174,7 @@
 
 % Importação de arquivos de texto %
 \RecustomVerbatimCommand{\VerbatimInput}{VerbatimInput}{
-    fontsize=\scriptsize,
+    fontsize=\footnotesize,
     %
     frame=lines,
     framesep=.5cm,
