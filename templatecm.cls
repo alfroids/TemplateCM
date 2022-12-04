@@ -18,7 +18,7 @@
 
 % IDENTIFICAÇÃO ------------------------------------------------------------------------------------
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{templatecm}[2022/10/31 Template para provas, listas e cadernos do CCM-USP]
+\ProvidesClass{templatecm}[2022/11/09 Template para provas, listas e cadernos do CCM-USP]
 
 
 % DECLARAÇÕES PRELIMINARES -------------------------------------------------------------------------
@@ -41,7 +41,7 @@
 
 \newcommand{\institute}[1]{\newcommand{\thisinstitute}{#1}}
 
-\newcommand{\maincolor}{black}
+\newcommand{\maincolor}{white}
 \newcommand{\layoutfile}{lyt/assignmentlayout.tex}
 
 
@@ -59,6 +59,7 @@
 \DeclareOption{yellow}{\renewcommand{\maincolor}{cmyellow}}
 \DeclareOption{green}{\renewcommand{\maincolor}{cmgreen}}
 \DeclareOption{blue}{\renewcommand{\maincolor}{cmblue}}
+\DeclareOption{black}{\renewcommand{\maincolor}{black}}
 
 % Escolha de layout %
 \DeclareOption{assignment}{\renewcommand{\layoutfile}{lyt/assignmentlayout.tex}}    % Padrão
@@ -164,6 +165,8 @@
 % Modificação de alguns comandos %
 \let\ds\displaystyle
 \allowdisplaybreaks
+\numberwithin{equation}{section}
+\numberwithin{table}{section}
 
 % Citações %
 \let\oldcite\cite
