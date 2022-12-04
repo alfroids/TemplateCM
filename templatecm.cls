@@ -18,7 +18,7 @@
 
 % IDENTIFICAÇÃO ------------------------------------------------------------------------------------
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{templatecm}[2022/11/09 Template para provas, listas e cadernos do CCM-USP]
+\ProvidesClass{templatecm}[2022/12/04 Template para provas, listas e cadernos do CCM-USP]
 
 
 % DECLARAÇÕES PRELIMINARES -------------------------------------------------------------------------
@@ -41,7 +41,7 @@
 
 \newcommand{\institute}[1]{\newcommand{\thisinstitute}{#1}}
 
-\newcommand{\maincolor}{white}
+\newcommand{\maincolor}{black}
 \newcommand{\layoutfile}{lyt/assignmentlayout.tex}
 
 
@@ -54,12 +54,12 @@
 \definecolor{cmblue}{RGB}{0,120,215}        % Computação
 
 % Escolha de cor %
+\DeclareOption{black}{\renewcommand{\maincolor}{black}}     % Padrão
 \DeclareOption{red}{\renewcommand{\maincolor}{cmred}}
 \DeclareOption{orange}{\renewcommand{\maincolor}{cmorange}}
 \DeclareOption{yellow}{\renewcommand{\maincolor}{cmyellow}}
 \DeclareOption{green}{\renewcommand{\maincolor}{cmgreen}}
 \DeclareOption{blue}{\renewcommand{\maincolor}{cmblue}}
-\DeclareOption{black}{\renewcommand{\maincolor}{black}}
 
 % Escolha de layout %
 \DeclareOption{assignment}{\renewcommand{\layoutfile}{lyt/assignmentlayout.tex}}    % Padrão
@@ -185,6 +185,22 @@
     rulecolor=\maincolor,
     %
     vspace=.5cm
+}
+
+% Lista de exercícios %
+\newlist{exercises}{enumerate}{3}
+\setlist[exercises, 1]{
+    label={\Large \hili{Exercício \arabic*.}},
+    align=left,
+    itemsep=1cm
+}
+\setlist[exercises, 2]{
+    label={\large \hili{\Alph*)}},
+    itemsep=.5cm
+}
+\setlist[exercises, 3]{
+    label={\normalsize \hili{\roman*.}},
+    itemsep=.5cm
 }
 
 % Outros comandos --------------------------------
