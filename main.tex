@@ -1,5 +1,5 @@
 % Conigurações do documento ------------------------------------------------------------------------
-\documentclass[red]{templatecm}
+\documentclass[black, assignment]{templatecm}
 
 % Parâmetros principais ----------------------------------------------------------------------------
 \title{Título}                          % Somente no modo "assignment" (padrão)
@@ -28,31 +28,37 @@
 %-------------------------------------------------
 \section{Exercícios}
 
-\begin{enumerate}[label={\Large \hili{Exercício \arabic*.}}, align=left, itemsep=1cm]
+\begin{exercises}
     \item ~
-    \begin{enumerate}[label={\large \hili{\Alph*)}}, itemsep=.5cm]
+    \begin{exercises}
         \item \lipsum[1-1]
         %------------------------
         \item \lipsum[2-2]
         %------------------------
-        \item \lipsum[3-3]
+        \item ~
+        \begin{exercises}
+            \item \lipsum[3-3]
+            %------------------------
+            \item \lipsum[4-4]
+            %------------------------
+        \end{exercises}
         %------------------------
-    \end{enumerate}
+    \end{exercises}
     %-------------------------------------------------
-    
-    \item \lipsum[4-5]
-\end{enumerate}
+
+    \item \lipsum[5-6]
+\end{exercises}
 
 %-------------------------------------------------
 \section{Seção A}
 %------------------------
 \subsection{Subseção}
 
-\lipsum[3-6]
+\lipsum[7-9]
 
- %------------------------------------------------
+%------------------------------------------------
 \section{Seção B}
 
-\lipsum[1-4]
+\lipsum[10-12]
 
 \end{document}
