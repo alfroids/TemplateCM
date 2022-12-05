@@ -188,17 +188,17 @@
 }
 
 % Lista de exercícios %
-\newlist{exercises}{enumerate}{3}
-\setlist[exercises, 1]{
+\newlist{exercise}{enumerate}{3}
+\setlist[exercise, 1]{
     label={\Large \hili{Exercício \arabic*.}},
     align=left,
     itemsep=1cm
 }
-\setlist[exercises, 2]{
+\setlist[exercise, 2]{
     label={\large \hili{\Alph*)}},
     itemsep=.5cm
 }
-\setlist[exercises, 3]{
+\setlist[exercise, 3]{
     label={\normalsize \hili{\roman*.}},
     itemsep=.5cm
 }
