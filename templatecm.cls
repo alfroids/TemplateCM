@@ -170,7 +170,7 @@
 
 % Citações %
 \let\oldcite\cite
-\renewcommand{\cite}[1]{\textsuperscript{\hili{\oldcite{#1}}}}
+\renewcommand{\cite}[1]{\,\textsuperscript{\hili{\oldcite{#1}}}}
 
 % Legendas %
 \captionsetup{justification=centering, font={small}, labelfont={bf}, labelsep=period}
