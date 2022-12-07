@@ -18,7 +18,7 @@
 
 % IDENTIFICAÇÃO ------------------------------------------------------------------------------------
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{templatecm}[2022/12/06 Template para provas, listas e cadernos do CCM-USP]
+\ProvidesClass{templatecm}[2022/12/07 Template para provas, listas e cadernos do CCM-USP]
 
 
 % DECLARAÇÕES PRELIMINARES -------------------------------------------------------------------------
@@ -40,6 +40,7 @@
 \newcommand{\term}[1]{\newcommand{\thisterm}{#1}}
 
 \newcommand{\institute}[1]{\newcommand{\thisinstitute}{#1}}
+\newcommand{\university}[1]{\newcommand{\thisuniversity}{#1}}
 
 \newcommand{\maincolor}{black}
 \newcommand{\layoutfile}{lyt/assignmentlayout.tex}
