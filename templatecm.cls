@@ -93,7 +93,7 @@
 \RequirePackage{setspace}               % Configurar o espaçamento entre linhas
 \RequirePackage{caption}                % Customizar as legendas
 \RequirePackage[brazilian]{babel}       % Traduzir alguns comandos automáticos
-\RequirePackage{csquotes}               % Inserir citações e aspas
+\RequirePackage{fvextra, csquotes}      % Inserir citações e aspas
 
 % Formatos especiais %
 \RequirePackage{booktabs, colortbl}     % Criar tabelas personalizadas
