@@ -18,7 +18,7 @@
 
 % IDENTIFICAÇÃO ------------------------------------------------------------------------------------
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{templatecm}[2022/12/07 Template para provas, listas e cadernos do CCM-USP]
+\ProvidesClass{templatecm}[2022/12/13 Template para provas, listas e cadernos do CCM-USP]
 
 
 % DECLARAÇÕES PRELIMINARES -------------------------------------------------------------------------
@@ -93,6 +93,7 @@
 \RequirePackage{multicol}               % Formatar o texto em múltiplas colunas
 \RequirePackage{setspace}               % Configurar o espaçamento entre linhas
 \RequirePackage{caption}                % Customizar as legendas
+\RequirePackage{subcaption}             % Inserir subfiguras e subtabelas
 \RequirePackage[brazilian]{babel}       % Traduzir alguns comandos automáticos
 \RequirePackage{fvextra, csquotes}      % Inserir citações e aspas
 
@@ -167,8 +168,10 @@
 % Modificação de alguns comandos %
 \let\ds\displaystyle
 \allowdisplaybreaks
+
 \numberwithin{equation}{section}
 \numberwithin{table}{section}
+\numberwithin{figure}{section}
 
 % Citações %
 \let\oldcite\cite
@@ -207,9 +210,9 @@
 
 % Outros comandos --------------------------------
 % Setas
-\newcommand{\arrow}{\textcolor{\maincolor}{$\boldsymbol{\rightarrow}$ }}
-\newcommand{\longarrow}{\textcolor{\maincolor}{$\boldsymbol{\longrightarrow}$ }}
-\newcommand{\squigarrow}{\textcolor{\maincolor}{$\boldsymbol{\rightsquigarrow}$ }}
+\newcommand{\arrow}{\textcolor{\maincolor}{$\boldsymbol{\rightarrow}$\ }}
+\newcommand{\longarrow}{\textcolor{\maincolor}{$\boldsymbol{\longrightarrow}$\ }}
+\newcommand{\squigarrow}{\textcolor{\maincolor}{$\boldsymbol{\rightsquigarrow}$\ }}
 
 % Observação
 \newcommand{\obs}[1]{{\footnotesize \hili{Obs:} #1}}
