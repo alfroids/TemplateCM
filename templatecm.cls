@@ -18,7 +18,7 @@
 
 % IDENTIFICAÇÃO ------------------------------------------------------------------------------------
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{templatecm}[2022/12/13 Template para provas, listas e cadernos do CCM-USP]
+\ProvidesClass{templatecm}[2022/12/14 Template para provas, listas e cadernos do CCM-USP]
 
 
 % DECLARAÇÕES PRELIMINARES -------------------------------------------------------------------------
@@ -82,8 +82,8 @@
 % OUTRAS DECLARAÇÕES -------------------------------------------------------------------------------
 % Outros Pacotes ---------------------------------
 % Configuração das fontes %
-\RequirePackage[proportional,scaled=1.1]{notomath}      % Fonte padrão e matemática
-\RequirePackage{nimbusmononarrow}                       % Fonte monospace
+\RequirePackage[proportional, scaled=1.1]{notomath}      % Fonte padrão e matemática
+\RequirePackage[scaled=1.15]{inconsolata}                % Fonte monospace
 \RequirePackage[T1]{fontenc}
 
 % Configuração do layout %
