@@ -1,15 +1,18 @@
 % Cabeçalho e rodapé da primeira página %
 \fancypagestyle{capa}{
     \fancyhf{}
-    \setlength{\headheight}{1.16cm}
+    \setlength{\headheight}{1.5cm}
+    \setlength{\headsep}{1cm}
     \renewcommand{\headrulewidth}{0pt}
-    \fancyhead[C]{\includesvg[height=1cm]{img/logo-cm.svg}}
+    \fancyhead[C]{\includesvg[height=1.15cm]{img/logo-cm.svg}}
 }
 
 % Cabeçalho e rodapé das páginas seguintes %
 \fancypagestyle{pagina}{
     \fancyhf{}
-    \setlength{\headheight}{.52cm}
+    \setlength{\headheight}{.6cm}
+    \setlength{\headsep}{1cm}
+    \setlength{\footskip}{1cm}
     \renewcommand{\headrulewidth}{1.5pt}
     \fancyhead[L]{\thistitle}
     \fancyhead[R]{\thiscourse}
