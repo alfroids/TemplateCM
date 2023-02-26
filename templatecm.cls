@@ -18,7 +18,7 @@
 
 % IDENTIFICAÇÃO ------------------------------------------------------------------------------------
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{templatecm}[2023/1/30 Template para provas, listas e cadernos do CCM-USP]
+\ProvidesClass{templatecm}[2023/02/26 Template para provas, listas e cadernos do CCM-USP]
 
 
 % DECLARAÇÕES PRELIMINARES -------------------------------------------------------------------------
@@ -96,6 +96,7 @@
 \RequirePackage{subcaption}             % Inserir subfiguras e subtabelas
 \RequirePackage[brazilian]{babel}       % Traduzir alguns comandos automáticos
 \RequirePackage{fvextra, csquotes}      % Inserir citações e aspas
+\RequirePackage[round]{natbib}          % Gerenciar a bibliografia
 
 % Formatos especiais %
 \RequirePackage{booktabs, colortbl}     % Criar tabelas personalizadas
@@ -172,10 +173,6 @@
 \numberwithin{equation}{section}
 \numberwithin{table}{section}
 \numberwithin{figure}{section}
-
-% Citações %
-\let\oldcite\cite
-\renewcommand{\cite}[1]{\,\textsuperscript{\hili{\oldcite{#1}}}}
 
 % Legendas %
 \captionsetup{justification=centering, font={small}, labelfont={bf}, labelsep=period}
