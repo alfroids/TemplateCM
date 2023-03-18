@@ -18,7 +18,7 @@
 
 % IDENTIFICAÇÃO ------------------------------------------------------------------------------------
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{templatecm}[2023/02/26 Template para provas, listas e cadernos do CCM-USP]
+\ProvidesClass{templatecm}[2023/03/18 Template para provas, listas e cadernos do CCM-USP]
 
 
 % DECLARAÇÕES PRELIMINARES -------------------------------------------------------------------------
@@ -109,7 +109,7 @@
 \RequirePackage{minted}                 % Importar e formatar código
 
 % Comandos matemáticos %
-\RequirePackage{amsmath}                % Usar fórmulas, comandos e símbolos matemáticos
+\RequirePackage{amsmath, bm}            % Usar fórmulas, comandos e símbolos matemáticos
 \RequirePackage{xfrac}                  % Gerar frações na diagonal
 
 % Outros %
