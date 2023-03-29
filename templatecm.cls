@@ -18,7 +18,7 @@
 
 % IDENTIFICAÇÃO ------------------------------------------------------------------------------------
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{templatecm}[2023/03/18 Template para provas, listas e cadernos do CCM-USP]
+\ProvidesClass{templatecm}[2023/03/29 Template para provas, listas e cadernos do CCM-USP]
 
 
 % DECLARAÇÕES PRELIMINARES -------------------------------------------------------------------------
@@ -133,23 +133,15 @@
 
 % Listas %
   % /itemize/
-\let\oldlabelitemi\labelitemi
-\renewcommand{\labelitemi}{\hili{\oldlabelitemi}}
-\let\oldlabelitemii\labelitemii
-\renewcommand{\labelitemii}{\hili{\oldlabelitemii}}
-\let\oldlabelitemiii\labelitemiii
-\renewcommand{\labelitemiii}{\hili{\oldlabelitemiii}}
-\let\oldlabelitemiv\labelitemiv
-\renewcommand{\labelitemiv}{\hili{\oldlabelitemiv}}
+\setlist[itemize, 1]{label=\hili{$\bullet$}}
+\setlist[itemize, 2]{label=\hili{$\circ$}}
+\setlist[itemize, 3]{label=\hili{$\diamond$}}
+\setlist[itemize, 4]{label=\hili{-}}
   % /enumerate/
-\let\oldlabelenumi\labelenumi
-\renewcommand{\labelenumi}{\hili{\oldlabelenumi}}
-\let\oldlabelenumii\labelenumii
-\renewcommand{\labelenumii}{\hili{\oldlabelenumii}}
-\let\oldlabelenumiii\labelenumiii
-\renewcommand{\labelenumiii}{\hili{\oldlabelenumiii}}
-\let\oldlabelenumiv\labelenumiv
-\renewcommand{\labelenumiv}{\hili{\oldlabelenumiv}}
+\setlist[enumerate, 1]{label=\hili{\arabic*.}}
+\setlist[enumerate, 2]{label=\hili{\alph*.}}
+\setlist[enumerate, 3]{label=\hili{\Roman*.}}
+\setlist[enumerate, 4]{label=\hili{\roman*.}}
 
 % Configurações do layout ------------------------
 % Estilo do código %
