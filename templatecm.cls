@@ -18,7 +18,7 @@
 
 % IDENTIFICAÇÃO ------------------------------------------------------------------------------------
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{templatecm}[2023/04/02 Template para provas, listas e cadernos do CCM-USP]
+\ProvidesClass{templatecm}[2023/04/03 Template para provas, listas e cadernos do CCM-USP]
 
 
 % DECLARAÇÕES PRELIMINARES -------------------------------------------------------------------------
@@ -82,8 +82,8 @@
 % OUTRAS DECLARAÇÕES -------------------------------------------------------------------------------
 % Outros Pacotes ---------------------------------
 % Configuração das fontes %
-\RequirePackage[proportional, scaled=1.1]{notomath}      % Fonte padrão e matemática
-\RequirePackage[scaled=1.15]{inconsolata}                % Fonte monospace
+\RequirePackage[proportional, scaled=1.1]{notomath}     % Fonte padrão e matemática
+\RequirePackage{nimbusmono}                             % Fonte monospace
 \RequirePackage[T1]{fontenc}
 
 % Configuração do layout %
@@ -162,10 +162,6 @@
 % Modificação de alguns comandos %
 \let\ds\displaystyle
 \allowdisplaybreaks
-
-\numberwithin{equation}{section}
-\numberwithin{table}{section}
-\numberwithin{figure}{section}
 
 % Legendas %
 \captionsetup{justification=centering, font={small}, labelfont={bf}, labelsep=period}
