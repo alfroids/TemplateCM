@@ -18,7 +18,7 @@
 
 % IDENTIFICAÇÃO ------------------------------------------------------------------------------------
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{templatecm}[2023/04/03 Template para provas, listas e cadernos do CCM-USP]
+\ProvidesClass{templatecm}[2023/04/17 Template para provas, listas e cadernos do CCM-USP]
 
 
 % DECLARAÇÕES PRELIMINARES -------------------------------------------------------------------------
@@ -90,7 +90,7 @@
 \RequirePackage[a4paper, top=3cm, bottom=3cm, left=2cm, right=2cm]{geometry}
 \RequirePackage[utf8]{inputenc}
 \RequirePackage{fancyhdr}               % Customizar o cabeçalho e o rodapé
-\RequirePackage{multicol}               % Formatar o texto em múltiplas colunas
+\RequirePackage{multicol, multirow}     % Formatar o texto em múltiplas colunas ou linhas
 \RequirePackage{setspace}               % Configurar o espaçamento entre linhas
 \RequirePackage{hyperref}               % Adicionar funcionalidades à referências cruzadas
 \RequirePackage{caption}                % Customizar as legendas
