@@ -10,7 +10,7 @@
 %
 %
 %     Arquivo LaTeX modelo para provas, listas e cadernos do CCM-USP
-%     Por: Alfredo Marin (T30)
+%     Por: Alfredo Marin (T29)
 %     Criado em: Outubro/2022
 %
 %---------------------------------------------------------------------------------------------------
@@ -18,7 +18,7 @@
 
 % IDENTIFICAÇÃO ------------------------------------------------------------------------------------
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{templatecm}[2023/04/17 Template para provas, listas e cadernos do CCM-USP]
+\ProvidesClass{templatecm}[2023/09/19 Template temático do CCM-USP para provas, listas de exercícios e cadernos]
 
 
 % DECLARAÇÕES PRELIMINARES -------------------------------------------------------------------------
@@ -90,9 +90,8 @@
 \RequirePackage[a4paper, top=3cm, bottom=3cm, left=2cm, right=2cm]{geometry}
 \RequirePackage[utf8]{inputenc}
 \RequirePackage{fancyhdr}               % Customizar o cabeçalho e o rodapé
-\RequirePackage{multicol, multirow}     % Formatar o texto em múltiplas colunas ou linhas
+\RequirePackage{multicol}               % Formatar o texto em múltiplas colunas
 \RequirePackage{setspace}               % Configurar o espaçamento entre linhas
-\RequirePackage{hyperref}               % Adicionar funcionalidades à referências cruzadas
 \RequirePackage{caption}                % Customizar as legendas
 \RequirePackage{subcaption}             % Inserir subfiguras e subtabelas
 \RequirePackage[brazilian]{babel}       % Traduzir alguns comandos automáticos
@@ -108,6 +107,7 @@
 \RequirePackage{hyperref}               % Adicionar hyperlinks
 \RequirePackage{fancyvrb}               % Importar arquivos de texto
 \RequirePackage{minted}                 % Importar e formatar código
+\RequirePackage{tikz}                   % Criar diagramas e elementos gráficos
 
 % Comandos matemáticos %
 \RequirePackage{amsmath, bm}            % Usar fórmulas, comandos e símbolos matemáticos
@@ -148,13 +148,15 @@
 % Estilo do código %
 \definecolor{bggray}{RGB}{240, 240, 240}
 \usemintedstyle{pastie}
-\setminted{fontsize=\small,
-           %
-           bgcolor=bggray,
-           %
-           frame=lines,
-           framesep=2.5mm,
-           baselinestretch=1.25}
+\setminted{
+    fontsize=\small,
+    %
+    bgcolor=bggray,
+    %
+    frame=lines,
+    framesep=2.5mm,
+    baselinestretch=1.25
+}
 
 % Espaçamento entre linhas %
 \setstretch{1.25}
