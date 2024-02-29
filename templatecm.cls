@@ -18,7 +18,7 @@
 
 % IDENTIFICAÇÃO ------------------------------------------------------------------------------------
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{templatecm}[2023/09/19 Template temático do CCM-USP para provas, listas de exercícios e cadernos]
+\ProvidesClass{templatecm}[2024/02/29 Template temático do CCM-USP para provas, listas de exercícios e cadernos]
 
 
 % DECLARAÇÕES PRELIMINARES -------------------------------------------------------------------------
@@ -90,7 +90,7 @@
 \RequirePackage[a4paper, top=3cm, bottom=3cm, left=2cm, right=2cm]{geometry}
 \RequirePackage[utf8]{inputenc}
 \RequirePackage{fancyhdr}               % Customizar o cabeçalho e o rodapé
-\RequirePackage{multicol}               % Formatar o texto em múltiplas colunas
+\RequirePackage{multicol, multirow}     % Formatar o texto em múltiplas colunas e linhas
 \RequirePackage{setspace}               % Configurar o espaçamento entre linhas
 \RequirePackage{caption}                % Customizar as legendas
 \RequirePackage{subcaption}             % Inserir subfiguras e subtabelas
@@ -204,6 +204,17 @@
 
 % Observação
 \newcommand{\obs}[1]{{\footnotesize \hili{Obs:} #1}}
+
+% Matemática
+\DeclareMathOperator\supp{supp}
+
+% Probabilidade e Estatística
+\newcommand{\RR}{\mathbb{R}}    % Reais
+\newcommand{\NN}{\mathbb{N}}    % Naturais
+\newcommand{\PP}{\mathbb{P}}    % Probabilidade
+\newcommand{\EE}{\mathbb{E}}    % Esperança
+\newcommand{\VV}{\mathbb{V}}    % Variância
+\newcommand{\given}{\,|\,}
 
 
 \endinput
